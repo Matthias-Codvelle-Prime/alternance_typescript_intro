@@ -1,0 +1,29 @@
+{
+  "name": "alternance_typescript_intro",
+  "version": "1.0.0",
+  "description": "_En préambule, pensez à créer un fork de ce projet dans votre espace personnel sur Github. Clonez ensuite ce fork dans votre espace de travail local._\r _Assurez-vous également que Node.js et NPM sont installés et à jour sur votre poste de travail._",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodemon": "nodemon -I"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Matthias-Codvelle-Prime/alternance_typescript_intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Matthias-Codvelle-Prime/alternance_typescript_intro/issues"
+  },
+  "homepage": "https://github.com/Matthias-Codvelle-Prime/alternance_typescript_intro#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.28",
+    "@types/prompts": "^2.0.9",
+    "nodemon": "^2.0.7",
+    "prompts": "^2.4.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}
