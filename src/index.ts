@@ -1,11 +1,15 @@
+import { Character } from './Character';
 const prompts = require('prompts');
 
 (async () => {
   const response = await prompts({
     type: 'text',
-    name: 'nameCharacter',
-    message: 'Entrer le nom de votre personnage :'
+    name: 'sexCharacter',
+    message: 'Choisissez le sexe de votre personnage\n[F: Féminin - M: Masculin] : '
   });
 
-  console.log(response.nameCharacter);
+  let character = new Character('Jacobin', response.sexCharacter, 10);
+  character.summary();
+  // START *****
+  console.log('Ennemi en approche !');
 })();
