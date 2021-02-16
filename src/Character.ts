@@ -1,7 +1,8 @@
 import { randomInt } from 'crypto';
 import { Enemy } from './Enemy';
+import { Fighter } from './Fighter';
 
-class Character {
+class Character implements Fighter {
 
     name: string
     sex: string
@@ -19,9 +20,13 @@ class Character {
     }
 
     attack(enemy: Enemy) {
-        let damage = randomInt(0, 100);
+        let damage = this.takeDamage(randomInt(0, 100));
         console.log(this.name + ' attaque de ' + damage + ' de dégats');
         enemy.pV -= damage;
+    }
+
+    takeDamage(damage: number): number {
+        return damage/2;
     }
 
 }

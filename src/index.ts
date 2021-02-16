@@ -4,7 +4,7 @@ const prompts = require('prompts');
 
 console.log('***** START *****');
 
-let battle = (character: Character, enemy: Enemy) => {
+let battle = (character: Character, enemy: Enemy): boolean => {
   character.attack(enemy);
   enemy.summary();
   if (enemy.pV <= 0) {
